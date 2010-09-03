@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Number3D Demo</title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js"></script>
+<script type="text/javascript" src="../Source/Number3D.js"></script>
+<script type="text/javascript">
+
+	window.addEvent('domready', function(){ 
+
+		var log = '';
+		
+		var n1 = new Number3D(2, 2, 2);
+		var n2 = new Number3D(5, 5, 5);
+        
+        var n3 = Number3D.add(n1, n2);
+        
+        log += 'N1 is: ' + n1 + '<br/>';
+        log += 'N2 is: ' + n2 + '<br/>';
+        log += 'N3 is: ' + n3 + '<br/>';
+        
+        n1.rotateZ(90);
+        
+        log += 'N1 now is: ' + n1 + '<br/>';
+        
+        n1.normalize();
+        
+        log += 'N1 finaly is: ' + n1 + '<br/>';
+        
+        $('test').set('html', log);
+	});
+		
+</script>
+
+</head>
+<body>
+	<div id="test"></div>​
+</body>
+</html>
