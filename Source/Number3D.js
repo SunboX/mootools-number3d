@@ -4,7 +4,7 @@ script: Number3D.js
 license: MIT-style license.
 description: The Number3D class represents a value in a three-dimensional coordinate system.
 copyright: Copyright (c) 2010, Dipl.-Ing. (FH) André Fiedler <kontakt at visualdrugs dot net>, based on code by Papervision3D.org
-authors: [André Fiedler, eskimoblood]
+authors: [André Fiedler]
 
 requires: 
   core/1.2.3: []‚
